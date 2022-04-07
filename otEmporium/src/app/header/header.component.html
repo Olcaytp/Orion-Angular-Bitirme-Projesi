@@ -1,0 +1,14 @@
+<header>
+  <div class="container">
+    <a href="#" routerLink="/" class="logo">OT Food Emporium !</a>
+    <nav>
+      <ul>
+        <li>
+            <button *ngIf="loginControl()" (click)="logout()" [routerLink]="['/login']" class="btn btn-success btn-lg me-3" >Logout</button>
+          <button [routerLink]="['/login']" class="btn btn-success btn-lg me-3" #LoginButton>Login</button>
+          <button [routerLink]="['/cart-page']" class="btn btn-success btn-lg me-3"> <img src="/assets/images/icons/cart.png"  height ="30" width="50"></button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
